@@ -24,9 +24,27 @@ profile.cov
 go.work
 go.work.sum
 
-# env file
-.env
+# Go build
+/bin/
+/dist/
+/build/
+*.test
+*.out
+*.o
+*.bpf.o
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+.env.*
+
+# System files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# BPF artifacts
+/sys/fs/bpf/*
